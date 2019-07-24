@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-<body>
+{% load render_bundle from webpack_loader %}
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-
-</body>
-</html>
+<div id="app"></div>
+{% render_bundle 'vendor' %}
+{% render_bundle 'app' %}

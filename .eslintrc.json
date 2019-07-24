@@ -1,0 +1,21 @@
+{
+    "extends": ["airbnb-base", "plugin:vue/recommended"],
+    "rules": {
+        "indent": ["error", 2],
+        "max-len": ["error", 120],
+        "prefer-arrow-callback": "off",
+        "linebreak-style": "off",
+        "object-curly-newline": "off",
+        "vue/singleline-html-element-content-newline": "off",
+        "vue/max-attributes-per-line": "off",
+        "no-console": "off",
+        "no-alert": "off",
+        "one-var": "off",
+        "one-var-declaration-per-line": "off",
+        "vue/html-closing-bracket-newline": "off",
+        "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
+    },
+    "globals": {
+        "$": true
+    }
+}
