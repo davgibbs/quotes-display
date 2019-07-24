@@ -1,0 +1,26 @@
+[
+  {
+    "model": "display.Quote",
+    "pk": 1,
+    "fields": {
+      "text": "Commitment leads to action. Action brings your dream closer.",
+      "author": "Marcia Wieder"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 2,
+    "fields": {
+      "text": "Imagination is more important than knowledge.",
+      "author": "Albert Einstein"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 3,
+    "fields": {
+      "text": "You cannot depend on your eyes when your imagination is out of focus.",
+      "author": "Mark Twain"
+    }
+  }
+]
