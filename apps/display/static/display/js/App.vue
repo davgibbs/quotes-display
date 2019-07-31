@@ -11,6 +11,9 @@
         Next
       </button>
     </div>
+    <div class="d-flex justify-content-center">
+      <img :src="'../../static/display/img/futuramagroup.png'">
+    </div>
   </div>
 </template>
 <script>
