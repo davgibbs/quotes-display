@@ -54,6 +54,41 @@
       "text": "I really ought to do something but I am already in my pyjamas.",
       "author": "Professor Farnsworth"
     }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 8,
+    "fields": {
+      "text": "Fry, it’s been years since medical school, so remind me. Disemboweling in your species, fatal or non-fatal?",
+      "author": "Zoidberg"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 9,
+    "fields": {
+      "text": "Now, My Usual Fee Is 500 Bucks. But Seeing As How It's You, I'm Gonna' Need It In Advance.",
+      "author": "Bender"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 10,
+    "fields": {
+      "text": "With A Warning Label This Big, You Know They Gotta' Be Fun!",
+      "author": "Hermes"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 11,
+    "fields": {
+      "text": "Kif, I Have Made It With A Woman. Inform The Men.",
+      "author": "Zapp Brannnigan"
+    }
   }
+
+
+
 
 ]

@@ -5,21 +5,20 @@ A small Web application to display Futurama quotes. It displays a random quote f
 
 ## Developer Information
 ### Local development setup
-Start by creating a Python virtualenv and installing requirements inside the diretory:
+After "git clone" on this repo, start by creating a Python virtualenv and installing requirements inside the diretory:
 ```bash
-    $ virtualenv -python=/usr/bin/python3.6 venv
+    $ virtualenv --python=/usr/bin/python3.6 venv
     $ source venv/bin/activate
     $ pip install -r requirements.txt
 ```
-Then run the "migrate" command to create the Django sqlite database. Also create a superuser with your own username and password:
+Then run the "migrate" command to create the Django sqlite database.
 ```bash
-    $ python manage.py migrate
-    $ python manage.py createsuperuser
+    $ python apps/manage.py migrate
 ```
 Next load in the quotes .json file and runserver:
 ```
-    $ python manage.py loaddata futurama.json
-    $ python manage.py runserver
+    $ python apps/manage.py loaddata futurama.json
+    $ python apps/manage.py runserver
 ```
 This is what is needed from the start the server-side.
 
