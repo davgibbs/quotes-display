@@ -38,7 +38,7 @@ git clean -d -x -f -e py36/ -e node_modules/
 echo "------------------"
 echo "Upgrade Python env"
 echo "------------------"
-py36/bin/pip install -r requirements.txt
+venv/bin/pip install -r requirements.txt
 
 echo "---------------------------"
 echo "Build the production bundle"
@@ -48,11 +48,11 @@ npm run build
 echo "---------------------------------------"
 echo "Collect all the static files for Django"
 echo "---------------------------------------"
-py36/bin/python apps/manage.py collectstatic --noinput --clear --settings=quotesdisplay.$SETTINGS_FILE
+venv/bin/python apps/manage.py collectstatic --noinput --clear --settings=quotesdisplay.$SETTINGS_FILE
 
 echo "-------------------------------------"
 echo "Run any migrations that are available"
 echo "-------------------------------------"
-py36/bin/python apps/manage.py migrate --settings=quotesdisplay.$SETTINGS_FILE
+venv/bin/python apps/manage.py migrate --settings=quotesdisplay.$SETTINGS_FILE
 
 
