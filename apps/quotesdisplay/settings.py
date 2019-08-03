@@ -120,6 +120,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# Django's collectstatic copies our bundles to the STATIC_ROOT or syncs them to whatever storage we use.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'display/static/display'),
+)
 
 # Webpack settings
 WEBPACK_LOADER = {
