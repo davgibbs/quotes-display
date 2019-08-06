@@ -68,10 +68,20 @@ module.exports = {
         use: 'vue-loader',
       },
       {
-        enforce: 'pre',
         test: /\.(js|vue)$/,
+        enforce: 'pre',
         exclude: /node_modules/,
         loader: 'eslint-loader',
+      },
+      {
+        test: /.*\.(png|jpe?g)$/i,
+        use: [{
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'images/',
+          },
+        }],
       },
     ],
   },

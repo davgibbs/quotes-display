@@ -22,41 +22,4 @@ module.exports = merge(common, {
       template: __dirname + '/apps/display/static/display/dev/dev_index.html',
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /.*\.(gif|ico|png|jpe?g)$/i,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'images/',
-            publicPath: 'http://localhost:3000/static/bundles/images/',
-          },
-        }],
-      },
-      {
-        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        use: [{
-          loader: 'url-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/',
-            publicPath: 'http://localhost:3000/static/bundles/fonts/',
-          },
-        }],
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/',
-            publicPath: 'http://localhost:3000/static/bundles/fonts/',
-          },
-        }],
-      },
-    ],
-  },
 });

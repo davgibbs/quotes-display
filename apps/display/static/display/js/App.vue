@@ -1,7 +1,7 @@
 <template>
   <div class="full-area h-100">
     <div class="d-flex justify-content-center">
-      <img :src="'../../static/display/img/futurama_PNG2.png'" alt="Fry Leela Bender Futurama" height="150px">
+      <img :src="futuramaImage" alt="Fry Leela Bender Futurama" height="150px">
     </div>
     <div class="d-flex justify-content-center">
       <h1>Futurama Random Quote</h1>
@@ -24,6 +24,7 @@
 <script>
 require('bootstrap/dist/css/bootstrap.min.css');
 const axios = require('axios');
+const futuramaImage = require('../img/futurama_PNG2.png');
 
 export default {
   name: 'App',
@@ -31,6 +32,7 @@ export default {
     return {
       quoteText: '',
       quoteAuthor: '',
+      futuramaImage,
     };
   },
   created() {

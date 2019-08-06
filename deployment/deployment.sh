@@ -15,9 +15,9 @@ fi
 SETTINGS_FILE=$1
 echo "Starting deployment with $SETTINGS_FILE settings"
 
-echo "---------------------------------"
+echo "---------------------------"
 echo "Go to the correct directory"
-echo "---------------------------------"
+echo "---------------------------"
 cd ~/quotes-display
 
 echo "---------------------------------"
