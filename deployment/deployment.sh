@@ -33,7 +33,7 @@ git reset --hard origin/master
 echo "----------------------------------------------------------"
 echo "Clean the directory except for the Python env and Node env"
 echo "----------------------------------------------------------"
-git clean -d -x -f -e venv/ -e node_modules/
+git clean -d -x -f -e venv/ -e node_modules/ -e db.sqlite3
 
 echo "------------------"
 echo "Upgrade Python env"
