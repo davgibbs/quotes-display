@@ -106,3 +106,4 @@ venv.bak/
 node_modules/
 .idea/
 webpack-stats.json
+bundles/

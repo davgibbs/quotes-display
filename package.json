@@ -1,10 +1,10 @@
 {
   "name": "quotes-display",
   "version": "1.0.0",
-  "description": "A simple Web application to display famous quotes",
+  "description": "A small Web application to display famous quotes",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --display-modules --config webpack.prod.js",
+    "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js"
   },
   "repository": {
@@ -28,9 +28,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-vue": "^5.2.3",
     "file-loader": "^4.1.0",
-    "html-loader": "^0.5.5",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
+    "style-loader": "^1.0.0",
     "vue": "^2.6.10",
     "vue-loader": "^15.7.1",
     "vue-template-compiler": "^2.6.10",

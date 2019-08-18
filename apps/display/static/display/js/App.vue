@@ -1,7 +1,7 @@
 <template>
   <div class="full-area h-100">
     <div class="d-flex justify-content-center">
-      <img :src="futuramaImage" alt="Fry Leela Bender Futurama" height="150px">
+      <img :src="futuramaImage" alt="Fry Leela Bender Futurama" height="200px">
     </div>
     <div class="d-flex justify-content-center">
       <h1>Futurama Random Quote</h1>
@@ -65,12 +65,10 @@ export default {
   padding-top: 2%;
 }
 .quote {
-    margin-top: 3%;
-    margin-bottom: 2%;
-    border-style: solid;
-    background-color: white;
-}
-p {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  border-style: solid;
+  background-color: white;
   font-size: 30px;
 }
 </style>

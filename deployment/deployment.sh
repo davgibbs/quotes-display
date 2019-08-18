@@ -55,4 +55,3 @@ echo "Run any migrations that are available"
 echo "-------------------------------------"
 venv/bin/python apps/manage.py migrate --settings=quotesdisplay.$SETTINGS_FILE
 
-

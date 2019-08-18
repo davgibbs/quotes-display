@@ -2,8 +2,7 @@
 
 const webpack = require('webpack');
 const BundleTracker = require('webpack-bundle-tracker');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
@@ -14,52 +13,19 @@ module.exports = {
   output: {
     path: __dirname + '/apps/display/static/display/bundles',
     filename: '[name].[hash].bundle.js',
-    chunkFilename: '[name].[chunkhash].bundle.js',
   },
   plugins: [
     new BundleTracker({
       filename: './apps/webpack-stats.json',
     }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-    }),
-    //new CleanWebpackPlugin([
-    //  __dirname + '/apps/address_matching/static/address_matching/bundles',
-    //]),
-    new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
-    }),
+    new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
   ],
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          chunks: 'initial',
-          name: 'vendor',
-        },
-      },
-    },
-  },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: [{
-          loader: MiniCssExtractPlugin.loader,
-          options: {
-            // you can specify a publicPath here by default it use publicPath in webpackOptions.output
-            publicPath: '/static/bundles/css/',
-          },
-        },
-        'css-loader',
-        ],
-      },
-      {
-        test: /\.html$/,
-        use: 'html-loader',
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.vue$/,
@@ -67,19 +33,13 @@ module.exports = {
       },
       {
         test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
         enforce: 'pre',
         exclude: /node_modules/,
-        loader: 'eslint-loader',
       },
       {
-        test: /.*\.(png|jpe?g)$/i,
-        use: [{
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'images/',
-          },
-        }],
+        test: /.*\.(png|jpe?g)$/,
+        use: 'file-loader',
       },
     ],
   },
