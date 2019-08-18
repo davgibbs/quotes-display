@@ -49,7 +49,7 @@ venv/bin/python apps/manage.py migrate --settings=quotesdisplay.$SETTINGS_FILE
 echo "---------------------------"
 echo "Install the JavaScript dependencies"
 echo "---------------------------"
-npm run install
+npm install
 
 echo "---------------------------"
 echo "Build the production bundle"
