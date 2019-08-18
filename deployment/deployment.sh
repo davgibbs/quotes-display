@@ -40,6 +40,17 @@ echo "Upgrade Python env"
 echo "------------------"
 venv/bin/pip install -r requirements.txt
 
+
+echo "-------------------------------------"
+echo "Run any migrations that are available"
+echo "-------------------------------------"
+venv/bin/python apps/manage.py migrate --settings=quotesdisplay.$SETTINGS_FILE
+
+echo "---------------------------"
+echo "Install the JavaScript dependencies"
+echo "---------------------------"
+npm run install
+
 echo "---------------------------"
 echo "Build the production bundle"
 echo "---------------------------"
@@ -49,9 +60,3 @@ echo "---------------------------------------"
 echo "Collect all the static files for Django"
 echo "---------------------------------------"
 venv/bin/python apps/manage.py collectstatic --noinput --clear --settings=quotesdisplay.$SETTINGS_FILE
-
-echo "-------------------------------------"
-echo "Run any migrations that are available"
-echo "-------------------------------------"
-venv/bin/python apps/manage.py migrate --settings=quotesdisplay.$SETTINGS_FILE
-
