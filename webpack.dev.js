@@ -9,7 +9,7 @@ module.exports = merge(common, {
     publicPath: 'http://localhost:3000/static/bundles/',
   },
   devServer: {
-    contentBase: __dirname + '/apps/display/static/display/bundles',
+    contentBase: __dirname + '/apps/frontend/bundles',
     port: 3000,
     hot: true,
     headers: {

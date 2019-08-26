@@ -6,12 +6,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
-  context: __dirname + '/apps/display/static/display',
+  context: __dirname + '/apps/frontend/',
   entry: {
     app: './js/index.js',
   },
   output: {
-    path: __dirname + '/apps/display/static/display/bundles',
+    path: __dirname + '/apps/frontend/bundles',
     filename: '[name].[hash].js',
   },
   plugins: [
