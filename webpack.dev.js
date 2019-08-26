@@ -11,6 +11,10 @@ module.exports = merge(common, {
   devServer: {
     contentBase: __dirname + '/apps/display/static/display/bundles',
     port: 3000,
+    hot: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*"
+    },
     watchOptions: {
       ignored: /node_modules/
     },

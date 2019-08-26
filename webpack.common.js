@@ -12,7 +12,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/apps/display/static/display/bundles',
-    filename: '[name].[hash].bundle.js',
+    filename: '[name].[hash].js',
   },
   plugins: [
     new BundleTracker({
