@@ -20,6 +20,6 @@ from display import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('quote/', views.random_quote),
+    path('quote', views.random_quote),
     path('', views.index),
 ]
