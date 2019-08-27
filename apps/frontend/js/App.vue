@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     getQuote() {
-      const url = '/quote';
+      const url = '/random-quote';
       axios.get(url)
         .then((x) => {
           this.quoteText = x.data.text;
