@@ -1,7 +1,7 @@
 # quotes-display
 A small Web application to display Futurama quotes. It displays a random quote from a database of quotes.
 
-![Futurama Quotes](https://github.com/davgibbs/quotes-display/blob/master/apps/display/static/display/img/screenshot.png)
+![Futurama Quotes](https://github.com/davgibbs/quotes-display/blob/master/apps/frontend/img/screenshot.png)
 
 ## Developer Information
 ### Local development setup
