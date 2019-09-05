@@ -6,10 +6,9 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'development',
   output: {
-    publicPath: 'http://localhost:3000/static/bundles/',
+    publicPath: 'http://localhost:3000/static/dist/',
   },
   devServer: {
-    contentBase: __dirname + '/apps/frontend/bundles',
     port: 3000,
     hot: true,
     headers: {

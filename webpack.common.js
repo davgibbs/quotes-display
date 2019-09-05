@@ -1,18 +1,15 @@
 /* This is the Webpack config common to both production and development */
 
-const webpack = require('webpack');
 const BundleTracker = require('webpack-bundle-tracker');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
-  context: __dirname + '/apps/frontend/',
   entry: {
-    app: './js/index.js',
+    app: './apps/frontend/js/index.js',
   },
   output: {
-    path: __dirname + '/apps/frontend/bundles',
-    filename: '[name].[hash].js',
+    filename: '[name].[hash].bundle.js',
   },
   plugins: [
     new BundleTracker({
