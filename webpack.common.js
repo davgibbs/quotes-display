@@ -18,6 +18,17 @@ module.exports = {
     new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
   ],
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'initial',
+          name: 'vendor',
+        },
+      },
+    },
+  },
   module: {
     rules: [
       {
@@ -37,6 +48,14 @@ module.exports = {
       {
         test: /.*\.(png|jpe?g)$/,
         use: 'file-loader',
+      },
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: file => (
+          /node_modules/.test(file) &&
+          !/\.vue\.js/.test(file)
+        )
       },
     ],
   },
