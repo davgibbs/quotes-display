@@ -129,7 +129,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # Webpack settings
 WEBPACK_LOADER = {
     'DEFAULT': {
-        'BUNDLE_DIR_NAME': 'bundles/',
+        'BUNDLE_DIR_NAME': 'dist/',
         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json'),
     }
 }
