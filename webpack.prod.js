@@ -6,6 +6,7 @@ const common = require('./webpack.common.js');
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    path: __dirname + '/apps/frontend/dist'
+    path: __dirname + '/apps/frontend/dist/',
+    publicPath: '/static/dist/'
   },
 });
