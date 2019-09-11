@@ -4,7 +4,7 @@
   "description": "A small Web application to display famous quotes",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.prod.js",
+    "build": "webpack",
     "start": "webpack-dev-server --config webpack.dev.js"
   },
   "repository": {
