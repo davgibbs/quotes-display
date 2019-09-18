@@ -23,8 +23,7 @@
 </template>
 <script>
 require('bootstrap/dist/css/bootstrap.min.css');
-const axios = require('axios');
-const futuramaImage = require('../img/futurama_PNG2.png');
+const futuramaImage = require('../img/futurama.png');
 
 export default {
   name: 'App',
@@ -41,10 +40,11 @@ export default {
   methods: {
     getQuote() {
       const url = '/random-quote';
-      axios.get(url)
-        .then((x) => {
-          this.quoteText = x.data.text;
-          this.quoteAuthor = x.data.author;
+      fetch(url)
+        .then(response => response.json())
+        .then((json) => {
+          this.quoteText = json.text;
+          this.quoteAuthor = json.author;
         });
     },
   },
