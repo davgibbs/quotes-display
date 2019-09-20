@@ -1,5 +1,12 @@
 {% load render_bundle from webpack_loader %}
 
-<div id="app"></div>
-{% render_bundle 'vendor' %}
-{% render_bundle 'app' %}
+<html>
+  <head>
+    <title>Futurama Random Quote</title>
+    {% render_bundle 'app' 'css' %}
+  </head>
+    <div id="app"></div>
+    {% render_bundle 'app' 'js' %}
+  </body>
+</html>
+

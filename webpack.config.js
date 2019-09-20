@@ -21,7 +21,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
   ],
-  optimization: {
+  /*optimization: {
     splitChunks: {
       cacheGroups: {
         commons: {
@@ -31,7 +31,7 @@ module.exports = {
         },
       },
     },
-  },
+  },*/
   module: {
     rules: [
       {
@@ -46,7 +46,7 @@ module.exports = {
         test: /.*\.(png|jpe?g)$/,
         use: 'file-loader',
       },
-      {
+      /*{
         test: /\.(js|vue)$/,
         loader: 'eslint-loader',
         enforce: 'pre',
@@ -56,7 +56,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-      },
+      },*/
     ],
   },
 };
