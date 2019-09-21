@@ -1,10 +1,10 @@
 <template>
   <div class="full-area h-100">
     <div class="d-flex justify-content-center">
-      <img :src="futuramaImage" alt="Fry Leela Bender Futurama" height="200px">
+      <img :src="environmentImage" alt="Earth with tree" height="200px">
     </div>
     <div class="d-flex justify-content-center">
-      <h1>Futurama Random Quote</h1>
+      <h1>Environment Random Quote</h1>
     </div>
     <div class="quote">
       <div class="d-flex flex-row justify-content-center">
@@ -23,7 +23,7 @@
 </template>
 <script>
 require('bootstrap/dist/css/bootstrap.min.css');
-const futuramaImage = require('../img/futurama.png');
+const environmentImage = require('../img/environment.png');
 
 export default {
   name: 'App',
@@ -31,7 +31,7 @@ export default {
     return {
       quoteText: '',
       quoteAuthor: '',
-      futuramaImage,
+      environmentImage,
     };
   },
   created() {

@@ -1,0 +1,130 @@
+[
+  {
+    "model": "display.Quote",
+    "pk": 1,
+    "fields": {
+      "text": "I only feel angry when I see waste. When I see people throwing away things we could use.",
+      "author": "Mother Teresa"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 2,
+    "fields": {
+      "text": "The Earth is what we all have in common.",
+      "author": "Wendell Berry"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 3,
+    "fields": {
+      "text": "Progress is impossible without change, and those who cannot change their minds cannot change anything.",
+      "author": "George Bernard Shaw"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 4,
+    "fields": {
+      "text": "Time spent among trees is never time wasted.",
+      "author": "Anonymous"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 5,
+    "fields": {
+      "text": "He that plants trees loves others besides himself.",
+      "author": "Thomas Fuller"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 6,
+    "fields": {
+      "text": "Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it is the only thing that ever has.",
+      "author": "Margaret Mead"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 7,
+    "fields": {
+      "text": "One of the first conditions of happiness is that the link between man and nature shall not be broken.",
+      "author": "Leo Tolstoy"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 8,
+    "fields": {
+      "text": "The environment is where we all meet; where we all have a mutual interest; it is the one thing all of us share.",
+      "author": "Lady Bird Johnson"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 9,
+    "fields": {
+      "text": "Nature is painting for us, day after day, pictures of infinite beauty.",
+      "author": "John Ruskin"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 10,
+    "fields": {
+      "text": "Like music and art, love of nature is a common language that can transcend political or social boundaries.",
+      "author": "Jimmy Carter"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 11,
+    "fields": {
+      "text": "Nothing is more beautiful than the loveliness of the woods before sunrise.",
+      "author": "George Washington Carver"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 12,
+    "fields": {
+      "text": "A nation that destroys its soils destroys itself. Forests are the lungs of our land, purifying the air and giving fresh strength to our people.",
+      "author": "Franklin D. Roosevelt"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 13,
+    "fields": {
+      "text": "What’s the use of a fine house if you haven’t got a tolerable planet to put it on.",
+      "author": "Henry David Thoreau"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 14,
+    "fields": {
+      "text": "The Earth is a fine place and worth fighting for",
+      "author": "Ernest Hemingway"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 15,
+    "fields": {
+      "text": "We have forgotten how to be good guests, how to walk lightly on the earth as its other creatures do.",
+      "author": "Barbara Ward"
+    }
+  },
+  {
+    "model": "display.Quote",
+    "pk": 16,
+    "fields": {
+      "text": "The proper use of science is not to conquer nature but to live in it.",
+      "author": "Barry Commoner"
+    }
+  }
+]
