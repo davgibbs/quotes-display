@@ -21,4 +21,4 @@ def index(request):
     :param request: request object
     :return: redirect to the correct page
     """
-    return render(request, 'display/index.html', {})
+    return render(request, 'quotes/index.html', {})
