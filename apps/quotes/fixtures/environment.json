@@ -1,6 +1,6 @@
 [
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 1,
     "fields": {
       "text": "I only feel angry when I see waste. When I see people throwing away things we could use.",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 2,
     "fields": {
       "text": "The Earth is what we all have in common.",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 3,
     "fields": {
       "text": "Progress is impossible without change, and those who cannot change their minds cannot change anything.",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 4,
     "fields": {
       "text": "Time spent among trees is never time wasted.",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 5,
     "fields": {
       "text": "He that plants trees loves others besides himself.",
@@ -40,7 +40,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 6,
     "fields": {
       "text": "Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it is the only thing that ever has.",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 7,
     "fields": {
       "text": "One of the first conditions of happiness is that the link between man and nature shall not be broken.",
@@ -56,7 +56,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 8,
     "fields": {
       "text": "The environment is where we all meet; where we all have a mutual interest; it is the one thing all of us share.",
@@ -64,7 +64,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 9,
     "fields": {
       "text": "Nature is painting for us, day after day, pictures of infinite beauty.",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 10,
     "fields": {
       "text": "Like music and art, love of nature is a common language that can transcend political or social boundaries.",
@@ -80,7 +80,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 11,
     "fields": {
       "text": "Nothing is more beautiful than the loveliness of the woods before sunrise.",
@@ -88,7 +88,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 12,
     "fields": {
       "text": "A nation that destroys its soils destroys itself. Forests are the lungs of our land, purifying the air and giving fresh strength to our people.",
@@ -96,7 +96,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 13,
     "fields": {
       "text": "What’s the use of a fine house if you haven’t got a tolerable planet to put it on.",
@@ -104,7 +104,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 14,
     "fields": {
       "text": "The Earth is a fine place and worth fighting for",
@@ -112,7 +112,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 15,
     "fields": {
       "text": "We have forgotten how to be good guests, how to walk lightly on the earth as its other creatures do.",
@@ -120,7 +120,7 @@
     }
   },
   {
-    "model": "display.Quote",
+    "model": "quotes.Quote",
     "pk": 16,
     "fields": {
       "text": "The proper use of science is not to conquer nature but to live in it.",
