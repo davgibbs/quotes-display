@@ -22,8 +22,8 @@
   </div>
 </template>
 <script>
-require('bootstrap/dist/css/bootstrap.min.css');
-const environmentImage = require('../img/environment.png');
+import 'bootstrap/dist/css/bootstrap.min.css';
+import environmentImage  from '../img/environment.png';
 
 export default {
   name: 'App',

@@ -3,9 +3,11 @@
 <html>
   <head>
     <title>Environment Random Quote</title>
+    {% render_bundle 'vendor' 'css' %}
     {% render_bundle 'app' 'css' %}
   </head>
     <div id="app"></div>
+    {% render_bundle 'vendor' 'js' %}
     {% render_bundle 'app' 'js' %}
   </body>
 </html>

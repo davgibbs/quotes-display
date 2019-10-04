@@ -21,7 +21,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
   ],
-  /*optimization: {
+  optimization: {
     splitChunks: {
       cacheGroups: {
         commons: {
@@ -31,7 +31,7 @@ module.exports = {
         },
       },
     },
-  },*/
+  },
   module: {
     rules: [
       {
