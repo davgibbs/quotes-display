@@ -1,7 +1,7 @@
 # quotes-display
-A small Web application to display Futurama quotes. It displays a random quote from a database of quotes.
+A small Web application to display an Environment quote. It displays a random quote from a database of quotes.
 
-![Futurama Quotes](https://github.com/davgibbs/quotes-display/blob/master/apps/frontend/img/screenshot.png)
+![Environment Quotes](https://github.com/davgibbs/quotes-display/blob/master/apps/frontend/img/screenshot.png)
 
 ## Developer Information
 ### Local development setup
@@ -17,7 +17,7 @@ Then run the "migrate" command to create the Django sqlite database.
 ```
 Next load in the quotes .json file and runserver:
 ```
-    $ python apps/manage.py loaddata futurama.json
+    $ python apps/manage.py loaddata environment.json
     $ python apps/manage.py runserver
 ```
 This is what is needed from the start the server-side.
