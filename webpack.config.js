@@ -3,6 +3,7 @@
 const BundleTracker = require('webpack-bundle-tracker');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   mode: 'production',
@@ -20,6 +21,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
+    //new BundleAnalyzerPlugin(),
   ],
   optimization: {
     splitChunks: {
