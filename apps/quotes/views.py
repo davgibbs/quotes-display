@@ -11,8 +11,6 @@ def random_quote(request):
     return JsonResponse(model_to_dict(quote))
 
 
-
-
 def index(request):
     """
     Base index on what to show when user comes to base
